@@ -1,0 +1,158 @@
+/* reset generale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* variabili colore */
+:root {
+    --header-background-img: #255DE9;
+    --navbar_TRASP: #ffffff5e;
+    --logo:green;
+    --menu:red;
+    --bottone: purple;
+    --hero: #ffffff5e;
+    --box-img: yellow;
+    --box-text: brown;
+    --section-gray: gray;
+    --footer-background: #23272A;
+    --footer-item: #ccff00;
+
+
+}
+
+/* start header */
+header {
+    background-color: var(--header-background-img);
+    padding: 15px;
+    height: 300px;
+}
+
+.flex {
+    display: flex;
+}
+
+header > .flex {
+    justify-content: space-around;
+}
+
+.logo,
+.menu,
+.btn-accedi {
+    height: 50px;
+    width: 50px;
+}
+
+
+nav {
+    background-color: var(--navbar_TRASP);
+    height: 20%;
+    
+}
+
+nav figure {
+    background-color: var(--logo);
+
+
+}
+nav .menu {
+    background-color: var(--menu);
+
+}
+
+nav button {
+    background-color: var(--bottone);
+
+}
+
+/* contenitore testo header */
+.box-hero{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    height: 100px;
+    margin-top: 20px;
+    background-color: var(--hero);
+} 
+/* inizio main */
+
+/* contenitore default per le section */
+.container-80 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* sfondo grigio per alcune section  */
+.bg-gray {
+    background-color: var(--section-gray);
+}
+
+
+.flex-basis-60 {
+    flex-basis: 60%;
+    height: 60px;
+    background-color: var(--box-img);
+}
+
+.flex-basis-40 {
+    flex-basis: 40%;
+    height: 60px;
+    background-color: var(--box-text);
+
+}
+
+/* selettore che prende l'ultima section  */
+main section:last-child > div {
+    flex-direction: column;
+}
+
+
+
+/* start footer */
+footer {
+    background-color: var(--footer-background);
+    height: 300px;
+}
+
+/* contenitore footer alto */
+.container-footer-top{
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+
+.container-footer-top section {
+    background-color: var(--footer-item);
+    flex-basis: 300px;
+    height: 20px;
+}
+
+.container-footer-top div{
+    background-color: var(--footer-item);
+    flex-basis: 50px;
+    height: 100px;
+    margin-bottom: 20px;
+
+}
+
+
+
+/* contenitore footer basso */
+.container-footer-bottom {
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 1px solid var(--footer-item);
+}
+
+.container-footer-bottom figure  {
+    background-color: var(--footer-item);
+    flex-basis: 50px;
+    height: 20px;
+}
+
+.container-footer-bottom button {
+    background-color: var(--footer-item);
+    flex-basis: 100px;
+    height: 20px;
+}
+
