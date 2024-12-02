@@ -6,7 +6,7 @@
 }
 /* variabili colore */
 :root {
-    --hero: #ffffff5e;
+
     --box-img: yellow;
     --box-text: brown;
     --section-gray: gray;
@@ -16,6 +16,7 @@
 
 html {
     font-family: sans-serif;
+    line-height: 160%;
 }
 
 /* start header */
@@ -24,7 +25,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 15px;
-    height: 400px;
+    /* height: 500px; */
     color: white;
 }
 
@@ -40,13 +41,12 @@ header > .flex {
 
 nav {
     width: 100%;
-    height: 25%;
+    height: 50px;
 }
 
 
 
 nav div.menu {
-    line-height: 60px;
     text-align: center;
 }
 
@@ -56,22 +56,46 @@ nav div.menu {
 
 nav .btn-accedi {
     flex-basis: 5%;
-    height: 50% ;
+    height: 60% ;
     background-color: white;
     border-radius: 50px ;
+    font-size: 12px;
+    border: none;
+    color: black;
 
 }
-
-
 /* contenitore testo header */
 .box-hero{
     text-align: center;
     width: 60%;
-    margin: 0 auto;
-    height: 100px;
-    margin-top: 20px;
-    background-color: var(--hero);
+    margin: 40px auto;
+    /* margin-top: 30px; */
+    padding: 50px;
+
 } 
+
+.box-hero h1, 
+.box-hero p,
+.box-hero button {
+    margin: 20px;
+}
+
+.box-hero > button {
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+
+}
+
+.btn-scarica {
+    background-color: white;
+    color: black;
+}
+.btn-browser {
+    background-color: black;
+    color: white;
+}
+
 /* inizio main */
 
 /* contenitore default per le section */
@@ -85,17 +109,24 @@ nav .btn-accedi {
     background-color: var(--section-gray);
 }
 
+.test-page {
+    height: 600px;
+}
+
+
+
+
 
 .flex-basis-60 {
     flex-basis: 60%;
-    height: 60px;
-    background-color: var(--box-img);
+    /* height: 60px; */
+    /* background-color: var(--box-img); */
 }
 
 .flex-basis-40 {
     flex-basis: 40%;
-    height: 60px;
-    background-color: var(--box-text);
+    /* height: 60px; */
+    /* background-color: var(--box-text); */
 
 }
 
