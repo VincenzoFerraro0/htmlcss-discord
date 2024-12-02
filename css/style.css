@@ -32,6 +32,11 @@ header {
     display: flex;
 }
 
+
+header > .flex {
+    justify-content: space-around;
+}
+
 nav button {
     flex-basis: 5%;
     background-color: white;
