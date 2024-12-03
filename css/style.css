@@ -149,6 +149,7 @@ main section:last-child > div {
     background-size: contain;
     background-repeat: no-repeat;
     width: 50%;
+    margin: 0 auto;
 }
 
 .section-text button {
@@ -164,48 +165,39 @@ main section:last-child > div {
 /* start footer */
 footer {
     background-color: var(--footer-background);
-    height: 300px;
+    color: white;
+    padding: 20px 0;
+
+}
+footer .flex {
+    justify-content: space-between;
+}
+footer a {
+    color: white;
+}
+footer h5 {
+    color: #7389DA;
 }
 
-/* contenitore footer alto */
-.container-footer-top{
-    justify-content: space-between;
+footer h4 {
+    color: #7389DA;
+}
+hr {
+    width: 80%;
     margin: 0 auto;
-
+    margin-block:10px;
+    border: 1px solid  #7389DA;
 }
-
-.container-footer-top section {
-    background-color: var(--footer-item);
-    flex-basis: 300px;
-    height: 20px;
-}
-
-.container-footer-top div{
-    background-color: var(--footer-item);
-    flex-basis: 50px;
-    height: 100px;
-    margin-bottom: 20px;
-
-}
-
-
-
-/* contenitore footer basso */
-.container-footer-bottom {
+/* l'ultimo figlio di footer */
+footer div:last-child {
     justify-content: space-between;
-    align-items: flex-end;
-    border-top: 1px solid var(--footer-item);
+    align-items: center;
 }
+footer div button {
+    background-color: #7389DA;
+    color: white;
 
-.container-footer-bottom figure  {
-    background-color: var(--footer-item);
-    flex-basis: 50px;
-    height: 20px;
+    padding: 15px 10px;
+    border-radius: 50px;
+    border: none;
 }
-
-.container-footer-bottom button {
-    background-color: var(--footer-item);
-    flex-basis: 100px;
-    height: 20px;
-}
-
