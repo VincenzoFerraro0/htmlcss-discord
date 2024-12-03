@@ -18,7 +18,6 @@ img {
 :root {
     --section-gray: #f6f6f6 ;
     --footer-background: #23272A;
-    --footer-item: #ccff00;
 }
 
 html {
@@ -33,7 +32,6 @@ header {
     background-size: cover;
     background-position: center;
     padding-block: 15px;
-    /* height: 500px; */
     color: white;
 }
 
@@ -67,7 +65,6 @@ nav .btn-accedi {
     text-align: center;
     width: 60%;
     margin: 40px auto;
-    /* margin-top: 30px; */
     padding: 50px;
 
 } 
@@ -106,6 +103,7 @@ nav .btn-accedi {
 /* sfondo grigio per alcune section  */
 .bg-gray {
     background-color: var(--section-gray);
+
 }
 
 main section {
@@ -182,17 +180,19 @@ footer h5 {
 footer h4 {
     color: #7389DA;
 }
+
+#icon-ita {
+    width: 25%;
+}
+
 hr {
     width: 80%;
     margin: 0 auto;
     margin-block:10px;
     border: 1px solid  #7389DA;
 }
-/* l'ultimo figlio di footer */
-footer div:last-child {
-    justify-content: space-between;
-    align-items: center;
-}
+
+
 footer div button {
     background-color: #7389DA;
     color: white;
