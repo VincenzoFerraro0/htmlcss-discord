@@ -132,9 +132,34 @@ figure.flex-basis-60 > img {
 /* selettore che prende l'ultima section  */
 main section:last-child > div {
     flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.section-text h2,
+.section-text p,
+.section-text figure,
+.section-text button {
+    margin-block: 20px;
 }
 
 
+.section-text div {
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+}
+
+.section-text button {
+    background-color: #7389DA;
+    color: white;
+    font-size: large;
+    padding: 15px 50px;
+    border-radius: 50px;
+    border: none;
+
+}
 
 /* start footer */
 footer {
