@@ -3,13 +3,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+img {
+    display: block;
 }
 /* variabili colore */
 :root {
-
-    --box-img: yellow;
-    --box-text: brown;
-    --section-gray: gray;
+    --section-gray: #f6f6f6 ;
     --footer-background: #23272A;
     --footer-item: #ccff00;
 }
@@ -24,7 +31,8 @@ header {
     background-image: url(../img/jumbo.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 15px;
+    background-position: center;
+    padding-block: 15px;
     /* height: 500px; */
     color: white;
 }
@@ -39,31 +47,21 @@ header > .flex {
     align-items: center;
 }
 
-nav {
-    width: 100%;
-    height: 50px;
-}
-
-
-
-nav div.menu {
-    text-align: center;
-}
-
-.menu span {
-    margin: 20px
+.menu {
+    display: flex;
+    gap: 15px;
 }
 
 nav .btn-accedi {
-    flex-basis: 5%;
-    height: 60% ;
+    padding-inline: 15px;
+    padding-block: 10px;
     background-color: white;
-    border-radius: 50px ;
-    font-size: 12px;
+    border-radius: 20px ;
     border: none;
     color: black;
 
 }
+
 /* contenitore testo header */
 .box-hero{
     text-align: center;
@@ -81,7 +79,7 @@ nav .btn-accedi {
 }
 
 .box-hero > button {
-    padding: 10px;
+    padding: 15px 10px;
     border-radius: 50px;
     border: none;
 
@@ -96,6 +94,7 @@ nav .btn-accedi {
     color: white;
 }
 
+
 /* inizio main */
 
 /* contenitore default per le section */
@@ -109,24 +108,24 @@ nav .btn-accedi {
     background-color: var(--section-gray);
 }
 
-.test-page {
-    height: 600px;
+main section {
+    padding: 20px 0;
 }
 
-
+figure.flex-basis-60 > img {
+    width: 100%;
+}
 
 
 
 .flex-basis-60 {
     flex-basis: 60%;
-    /* height: 60px; */
-    /* background-color: var(--box-img); */
+
 }
 
 .flex-basis-40 {
+    padding-top: 20px;
     flex-basis: 40%;
-    /* height: 60px; */
-    /* background-color: var(--box-text); */
 
 }
 
